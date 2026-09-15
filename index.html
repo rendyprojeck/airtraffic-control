@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pemindai ATC Juanda — Bisa Didengar</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #0f172a; color: white; padding: 15px; min-height: 100vh; }
+    .container { max-width: 450px; margin: 0 auto; }
+    h1 { font-size: 1.2rem; text-align: center; color: #38bdf8; margin-bottom: 15px; }
+    
+    .catatan {
+      background: rgba(34,197,94,0.1); border-left: 3px solid #22c55e;
+      padding: 12px; border-radius: 8px; margin-bottom: 15px;
+      font-size: 0.8rem; line-height: 1.5; color: #bbf7d0;
+    }
+    
+    .daftar { margin-bottom: 20px; }
+    .item {
+      background: #1e293b; border-radius: 10px; padding: 15px; margin-bottom: 10px;
+      border-left: 4px solid transparent;
+    }
+    .item.aktif { background: #1e3a5f; border-left-color: #38bdf8; }
+    .nama { font-weight: bold; font-size: 0.95rem; margin-bottom: 4px; }
+    .freq { font-size: 0.75rem; color: #94a3b8; margin-bottom: 10px; }
+    .buka-btn {
+      display: inline-block; background: #3b82f6; color: white;
+      padding: 10px 20px; border-radius: 8px; text-decoration: none;
+      font-size: 0.9rem; font-weight: bold; text-align: center;
+      width: 100%; transition: all 0.2s;
+    }
+    .buka-btn:active { transform: scale(0.98); background: #2563eb; }
+    .buka-btn.atas { background: #10b981; }
+    .buka-btn.atas:active { background: #059669; }
+    
+    .info {
+      background: #1e293b; border-radius: 10px; padding: 15px;
+      font-size: 0.75rem; line-height: 1.7; color: #bfdbfe;
+    }
+    .info strong { color: #facc15; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>✈️ ATC Bandara Juanda — Surabaya</h1>
+
+  <div class="catatan">
+    ✅ <strong>Cara baru:</strong> Tekan tombol → akan terbuka halaman pemutar langsung.<br>
+    Ini cara paling pasti — tidak terhalang keamanan browser!
+  </div>
+
+  <div class="daftar">
+    <!-- ATIS — SELALU ADA SUARA -->
+    <div class="item">
+      <div class="nama">📋 ATIS — 128.200 MHz</div>
+      <div class="freq">Info cuaca, landasan, angin — SELALU ADA SUARA 24 jam</div>
+      <a href="https://www.liveatc.net/play/warr_atis.pls" target="_blank" class="buka-btn atas">
+        🔊 Buka & Dengarkan
+      </a>
+    </div>
+
+    <!-- Tower -->
+    <div class="item">
+      <div class="nama">🗼 Juanda Tower — 118.300 MHz</div>
+      <div class="freq">Pesawat lepas landas & mendarat — kalau hening = tidak ada pesawat</div>
+      <a href="https://www.liveatc.net/play/warr_tower.pls" target="_blank" class="buka-btn">
+        🔊 Buka & Dengarkan
+      </a>
+    </div>
+
+    <!-- Ground -->
+    <div class="item">
+      <div class="nama">🚗 Juanda Ground — 118.900 MHz</div>
+      <div class="freq">Pesawat bergerak di darat</div>
+      <a href="https://www.liveatc.net/play/warr_gnd.pls" target="_blank" class="buka-btn">
+        🔊 Buka & Dengarkan
+      </a>
+    </div>
+
+    <!-- Approach -->
+    <div class="item">
+      <div class="nama">🔭 Surabaya Approach — 124.000 MHz</div>
+      <div class="freq">Pesawat turun mendekati bandara</div>
+      <a href="https://www.liveatc.net/play/warr_app.pls" target="_blank" class="buka-btn">
+        🔊 Buka & Dengarkan
+      </a>
+    </div>
+
+    <!-- Semua -->
+    <div class="item">
+      <div class="nama">🔊 Semua Gabungan</div>
+      <div class="freq">Tower + Ground + Approach sekaligus</div>
+      <a href="https://www.liveatc.net/play/warr_all.pls" target="_blank" class="buka-btn">
+        🔊 Buka & Dengarkan
+      </a>
+    </div>
+  </div>
+
+  <div class="info">
+    <strong>💡 Cara Pakai:</strong><br>
+    1. Tekan tombol hijau ATIS di atas<br>
+    2. Halaman baru akan terbuka otomatis<br>
+    3. Tunggu 5–10 detik → suara keluar sendiri ✅<br>
+    4. Kalau tidak keluar → tekan tombol ▶ di halaman itu<br><br>
+    
+    <strong>⚠️ Penting:</strong><br>
+    • ATIS = selalu ada suara (bacaan info otomatis)<br>
+    • Tower = kadang hening, tunggu pesawat lepas/mendarat<br>
+    • Buka pakai <strong>Chrome</strong> atau <strong>Edge</strong> hasil terbaik<br>
+    • Hanya untuk didengar & belajar — DILARANG mengirim sinyal
+  </div>
+</div>
+
+</body>
+</html>
+
